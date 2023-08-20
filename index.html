@@ -8,12 +8,22 @@
     <title>Form Validation</title>
 </head>
 <body>
-    <form>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="text" id="country" placeholder="Country" required>
-        <input type="text" id="zip" placeholder="ZIP" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <input type="password" id="password-confirm" placeholder="Confirm Password" required>
+    <form novalidate>
+        <input type="email" id="email" placeholder="Email" minlength="8">
+        <span class="error" aria-live="polite"></span>
+
+        <input type="text" id="country" placeholder="Country">
+        <span class="error" aria-live="polite"></span>
+
+        <input type="text" id="zip" placeholder="ZIP">
+        <span class="error" aria-live="polite"></span>
+
+        <input type="password" id="password" placeholder="Password">
+        <span class="error" aria-live="polite"></span>
+
+        <input type="password" id="password-confirm" placeholder="Confirm Password">
+        <span class="error" aria-live="polite"></span>
+
         <input type="submit" id="submit">
     </form>
 </body>
