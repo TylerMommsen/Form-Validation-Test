@@ -22,8 +22,9 @@ form > * {
     width: 100%;
 }
 
-input {
+input, select {
     border: 1px solid black;
+    background-color: white;
     padding: 10px;
     border-radius: 5px;
 }
